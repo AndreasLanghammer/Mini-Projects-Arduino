@@ -24,7 +24,7 @@
      Serial.print("Sensor Value: "); // The next two rows only prints the value in the console.
      Serial.print(sensVal);
      Serial.print("\n");
-     delayVal = (sensor * 1); //Takes the value an multiplies it with 100 so the polling does not occur so often.
+     delayVal = (sensor * 100); //Takes the value and multiplies it with 100 so the polling does not occur so often.
      delay(1000); // Delay 1 s
      
      //The logic part
