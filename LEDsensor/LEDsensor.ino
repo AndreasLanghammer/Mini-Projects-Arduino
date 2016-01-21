@@ -9,7 +9,7 @@
   int sensor = A0; 
   int LED = 10; 
   int Vref = 11;
-  int transitionVal = 700;
+  int transitionVal = 600;
   int delayVal = 0;
   
   void setup(){
@@ -28,7 +28,7 @@
      delay(1000); // Delay 1 s
      
      //The logic part
-     if(sensVal > transitionVal){
+     if(sensVal < transitionVal){
        digitalWrite(LED, HIGH); // LED on
      }else{
        digitalWrite(LED, LOW); // LED off
